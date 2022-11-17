@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="0" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-17T14:08:18 IST" name="Parabank" finished-at="2022-11-17T14:09:09 IST" duration-ms="51138">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerPackage.runner@126253fd]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2022-11-17T14:08:18 IST" name="Parabank E2E Flow" finished-at="2022-11-17T14:09:09 IST" duration-ms="51138">
+      <class name="runnerPackage.runner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runnerPackage.runner@126253fd]" started-at="2022-11-17T14:08:18 IST" name="setUpClass" finished-at="2022-11-17T14:08:19 IST" duration-ms="1173" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7f012923]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerPackage.runner@126253fd]" started-at="2022-11-17T14:08:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-17T14:08:39 IST" duration-ms="20329" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To create CHECKINGS account"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To verify account creation of Checkings and Savings Type"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+at org.junit.Assert.fail(Assert.java:86)
+at org.junit.Assert.fail(Assert.java:95)
+at pages.CreateAccount.verifyCheckingsAccount(CreateAccount.java:148)
+at stepdefinitions.createAccountSteps.in_account_details_section_should_be_present_for_checkings_account(createAccountSteps.java:104)
+at ✽.in Account details section "CHECKING" , "$100.00", "$100.00" should be present for checkings account(file:///D:/Automation/abc/Parabank/features/createAccount.feature:15)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerPackage.runner@126253fd]" started-at="2022-11-17T14:08:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-17T14:08:57 IST" duration-ms="17447" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To create SAVINGS account"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To verify account creation of Checkings and Savings Type"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+at org.junit.Assert.fail(Assert.java:86)
+at org.junit.Assert.fail(Assert.java:95)
+at pages.CreateAccount.verifySavingsAccount(CreateAccount.java:220)
+at stepdefinitions.createAccountSteps.in_account_details_section_should_be_present_for_savings_account(createAccountSteps.java:142)
+at ✽.in Account details section "<Account Type>" , "$100.00", "$100.00" should be present for savings account(file:///D:/Automation/abc/Parabank/features/createAccount.feature:27)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerPackage.runner@126253fd]" started-at="2022-11-17T14:08:57 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-17T14:09:09 IST" duration-ms="11992" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To transfer amount from checkings to savings"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To verify account creation of Checkings and Savings Type"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+at org.junit.Assert.fail(Assert.java:86)
+at org.junit.Assert.fail(Assert.java:95)
+at pages.CreateAccount.verifyBillPaymentMessage(CreateAccount.java:340)
+at stepdefinitions.createAccountSteps.user_should_get_bill_payment_complete_message(createAccountSteps.java:207)
+at ✽.user should get BillPaymentComplete message(file:///D:/Automation/abc/Parabank/features/createAccount.feature:39)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runnerPackage.runner@126253fd]" started-at="2022-11-17T14:09:09 IST" name="tearDownClass" finished-at="2022-11-17T14:09:09 IST" duration-ms="124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runnerPackage.runner -->
+    </test> <!-- Parabank E2E Flow -->
+  </suite> <!-- Parabank -->
+</testng-results>
